@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NZ Music Live - Contact Us</title>
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+  <header>
+    <img src="images/headerimg.jpg" alt="live music" id="headerimg">
+    <h1>NZ Music Live</h1>
+    <img src="images/logo.jpg" alt="NZ Music Live logo" id="logo">
+  </header>
+
+  <span id="mobile" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+
+  <nav id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="contactus.html" class="selected">Contact Us</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="musician.html">Musician</a></li>
+    </ul>
+  </nav>
+
+  <nav id="desktoponly">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="contactus.html" class="selected">Contact Us</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="musician.html">Musician</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <aside>
+
+    </aside>
+    <div class="contacttext">
+      <h3>Contact Information</h3>
+      <p>Address: 64 Manchester St</p>
+      <p>Phone: 366-1234</p>
+      <p>Email: sam.stewart@gmail.com</p>
+      <p>Fill out the form below to subscribe to our monthly newsletter!</p>
+      <form action="mailto:bob@bogus.com" method="POST">
+        <div>
+    		  <label for="name">Name</label>
+    		  <input type="text" id="name" name="name" required>
+    	  </div>
+
+        <div>
+    	    <label for="email">Email</label>
+    		  <input type="email" id="email" name="email" required>
+    	  </div>
+
+        <div>
+    	    <label for="age">Age</label>
+    		  <input type="number" id="age" name="age" min="16" max="100" required>
+    	  </div>
+
+        <div>
+    		  <input type="checkbox" id="consent" name="consent" class="consent" value="true" required >
+    		  <label for="consent" class="consent">By checking this box you agree to receive monthly emails and promotional offers.</label>
+    	  </div>
+
+        <div>
+    	    <input type="submit" id="submit" value="Submit">
+    	  </div>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <ul>
+      <li>&copy; NZ Music Live, 2018</li>
+    </ul>
+  </footer>
+
+  <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "30rem";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+  </script>
+
+</body>
+</html>

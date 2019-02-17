@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NZ Music Live - About Us</title>
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+  <header>
+    <img src="images/headerimg.jpg" alt="live music" id="headerimg">
+    <h1>NZ Music Live</h1>
+    <img src="images/logo.jpg" alt="NZ Music Live logo" id="logo">
+  </header>
+
+  <span id="mobile" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+
+
+  <nav id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html" class="selected">About Us</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="musician.html">Musician</a></li>
+    </ul>
+  </nav>
+
+  <nav id="desktoponly">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html" class="selected">About Us</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="musician.html">Musician</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="maintext">
+      <h2>Overview</h2>
+      <p>Sam Stewart started collecting recordings of live performances by New Zealand bands and musicians when she was a schoolgirl. She had a music teacher at school who regularly played NZ music records to introduce the pupils to local music. The teacher would talk passionately about the different pieces of music. She showed the pupils how NZ music had developed and diversified over time. Sam was hooked. She started to look around for recordings to collect for herself. She also bought a professional-quality Sony tape recorder with money she earnt delivering supermarket pamphlets and used it record some live performances herself. Slowly, but steadily, her collection grew.</p>
+      <p>In 1999 Sam decided to make collecting live recordings of NZ music her main focus. She established her company, NZ Music Live, and has been devoting more time to collecting recordings ever since. She still goes out and records live performances herself, when the musicians give her permission. Currently, she has thousands of recordings, including many that are considered to be significant. The idea came to her that it would be wonderful to be able to share her recordings with people from around the world, so she has started this website, which showcases the music she has collected.</p>
+    </div>
+  </main>
+
+  <footer>
+    <ul>
+      <li>&copy; NZ Music Live, 2018</li>
+    </ul>
+  </footer>
+
+  <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "30rem";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NZ Music Live - Recording 1</title>
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+  <header>
+    <img src="images/headerimg.jpg" alt="live music" id="headerimg">
+    <h1>NZ Music Live</h1>
+    <img src="images/logo.jpg" alt="NZ Music Live logo" id="logo">
+  </header>
+
+  <span id="mobile" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+
+  <nav id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="musician.html">Musician</a></li>
+    </ul>
+  </nav>
+
+  <nav id="desktoponly">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="musician.html">Musician</a></li>
+    </ul>
+  </nav>
+
+  <main class="recordingpages">
+    <!-- Start NZ On Screen - Down in Splendour Size: 100% by 410 -->
+    <iframe width="100%" height="410" src="https://www.nzonscreen.com/embed/6dbd92db5eb780ec" frameborder="0" allowfullscreen></iframe>
+    <!-- End NZ On Screen - Down in Splendour -->
+    <div>
+      <h3>Down in Splendour</h3>
+      <p>Director Andrew Dominik captures the dreamy essence of this early 90s gem superbly, while adding a slightly sinister edge (check out a sneering Shayne Carter). The use of colour over black and white, superimposed imagery (and "mouth cam") makes for a liquid delight. </p>
+    </div>
+  </main>
+
+  <footer>
+    <ul>
+      <li>&copy; NZ Music Live, 2018</li>
+    </ul>
+  </footer>
+
+  <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "30rem";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+  </script>
+
+</body>
+</html>

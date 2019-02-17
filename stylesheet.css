@@ -1,0 +1,385 @@
+/* RESET */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    /* Cancel out some differences between browser defaults */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+* {
+    /* The width of an element will be the size of its border box,
+       not its content box (which is the normal default). */
+    box-sizing: border-box;
+}
+
+/* == END RESET =========================================== */
+
+body {
+  width: 30rem;
+  background-color: white;
+}
+
+main {
+  padding: 1em;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  flex-grow: 1;
+  text-align: center;
+}
+
+h2, h3 {
+  text-align: center;
+
+}
+
+p {
+  padding: 0.5em;
+}
+
+.caption {
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 0 0.8em 0.8em 0.8em;
+}
+
+/* NAVIGATION */
+footer ul {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+nav ul, nav a, main a, main ul, footer li {
+  text-decoration: none;
+  text-align: center;
+  list-style-type: none;
+}
+
+/* COLOURS AND TYPOGRAPHY */
+body {
+  font-family: Verdana, Arial, sans-serif;
+}
+
+h1, nav a, footer a {
+  font-family: Verdana, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+header {
+  background-color: black;
+}
+
+.maintext h1 {
+  color: black;
+  border-bottom: 1px solid gray;
+}
+
+h1 {
+  color: red;
+}
+
+nav a {
+  color: black;
+}
+
+a:hover {
+  color: darkred;
+}
+
+.selected {
+  color: red;
+}
+
+.maintext, .contacttext, div {
+  background-color: lightgray;
+  margin: 1em;
+}
+
+.recordings h3 {
+  padding: 1em;
+}
+
+div {
+  padding: 0.5em;
+}
+
+/* IMAGES */
+
+img {
+  width: 100%;
+}
+
+#headerimg {
+  display: none;
+}
+
+#logo {
+  width: 5rem;
+  margin: 1em;
+}
+
+#desktoponly {
+  display: none;
+}
+
+#mobileonly {
+  padding: 2em;
+}
+
+main #fits1 {
+  float: left;
+  width: 13em;
+  margin: 1em 1em 0em 1em;
+}
+
+main #fits2 {
+  float: right;
+  width: 8em;
+  margin: 1em;
+}
+
+main ul li img {
+  padding: 0 3em;
+}
+
+/* FORMS */
+form {
+  /* Just to center the form on the page */
+  margin: 0 auto;
+  width: 400px;
+  /* To see the outline of the form */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  /* To make sure that all labels have the same size and are properly aligned */
+  display: inline-block;
+  width: 90px;
+  text-align: left;
+}
+
+
+input, textarea {
+  /* To make sure that all text fields have the same font settings
+  By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* To give the same size to all text fields */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* To harmonize the look & feel of text field border */
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  /* To give a little highlight on active elements */
+  border-color: #000;
+}
+
+.consent {
+  display: inline;
+  width: 0.9rem;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+@media screen and (min-width: 50rem) {
+
+  #mobile {
+    display: none;
+  }
+
+  body {
+      /* This is a left-aligned, fixed-width layout, so just needs a width on the body. */
+      width: 60rem;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      grid-column-gap: 2em;
+    }
+
+    header {
+      display: inline;
+      /* The whole left-hand column is the header of the page, so it spans all the rows. */
+      grid-row: 1 / 4;
+    }
+
+    .maintext, .contacttext, div {
+      background-color: lightgray;
+      margin: 0em;
+    }
+
+    header h1 {
+      flex-grow: 1;
+    }
+
+    nav {
+      padding: 1em 0;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    main {
+      display: flex;
+      margin: 0em;
+      padding: 0em;
+    }
+
+    .recordingpages {
+      display: inline;
+    }
+
+    .recordings, .maintext {
+      margin: 1em;
+    }
+
+    p {
+      padding: 1em;
+      margin: 1em;
+    }
+
+    footer {
+      padding: 2em 0;
+    }
+
+    .imgsection {
+      margin: 1em;
+    }
+
+    footer li {
+      margin: 0 1em;
+    }
+
+    /* TYPOGRAPHY */
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      margin: 2em 0.5em 0 0.5em;
+    }
+
+    h2, h3 {
+      text-align: center;
+    }
+
+    nav a {
+      font-size: 1.5rem;
+    }
+
+    .contacttext p {
+      text-align: center;
+      padding: 0.5em;
+      margin: 0.5em;
+    }
+
+    .maintext h1 {
+      margin: 0.5em;
+      border-bottom: 1px solid gray;
+    }
+
+    /* COLOUR SCHEME & BORDERS */
+
+    body {
+      color: #444444;
+    }
+
+    header {
+      background-color: black;
+      color: #ff3333;
+    }
+
+    nav a, footer a {
+      color: #444444;
+      text-decoration: none;
+    }
+
+    /* IMAGES */
+    img {
+      width: 100%;
+    }
+
+    #logo {
+      width: 100%;
+      margin: 0;
+      padding: 2em;
+    }
+
+    #headerimg {
+      display: inline;
+    }
+
+    main ul li img {
+      margin: 1em;
+      width: 10em;
+      padding: 0em;
+    }
+
+    #mobileonly {
+      display: none;
+    }
+
+    #desktoponly {
+      display: inline;
+    }
+
+    main #fits1 {
+      float: left;
+      width: 13em;
+      margin: 1em 1em 0em 1em;
+    }
+
+    main #fits2 {
+      float: right;
+      width: 10em;
+      margin: 1em;
+    }
+}
